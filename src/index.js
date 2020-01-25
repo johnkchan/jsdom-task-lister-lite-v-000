@@ -7,6 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   submit.addEventListener("click", (event) => {
     event.preventDefault();
     var task = description.value;
-    tasks.innerHTML += `<div id="list-${todo}"><li>${todo}<button>X</button></div>`;
+    tasks.innerHTML += `<div id="list-${task}"><li>${task}<button>X</button></div>`;
   })
 });
