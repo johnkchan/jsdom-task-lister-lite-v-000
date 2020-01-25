@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let tasks = document.querySelector("tasks")
   
   submit.addEventListener("click", (event) => {
-    
+    event.preventDefault();
     var task = document.createElement("li");
     tasks.appendChild(task);
   })
