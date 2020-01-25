@@ -5,6 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let tasks = document.querySelector("tasks")
   
   form.addEventListener("submit", () => {
-    
+    tasks.add
   })
 });
