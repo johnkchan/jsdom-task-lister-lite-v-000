@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
   form.addEventListener("submit", () => {
     var task = document.createElement("li");
-    tasks.appendChild(task)
+    tasks.appendChild(task);
   })
 });
