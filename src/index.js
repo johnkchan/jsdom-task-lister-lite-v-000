@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let description = document.querySelector("#new-task-description");
   let tasks = document.querySelector("tasks")
   
-  form.addEventListener("submit", (event) => {
+  submit.addEventListener("click", (event) => {
+    
     var task = document.createElement("li");
     tasks.appendChild(task);
   })
