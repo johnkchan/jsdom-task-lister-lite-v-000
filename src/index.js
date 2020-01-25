@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // your code here
-  let submit = document.querySelector("submit");
-  let description = document.querySelector("new-task-description");
-  let tasks = document.querySelector("tasks")
-  
-  submit.addEventListener("click", (event) => {
+  const task = document.getElementById("new-task-description")
+  const submit = document.getElementById("submit");
+  const list = document.getElementById("list");
+
+  submit.addEventListener("click", function(event) {
     event.preventDefault();
-    var task = description.value;
-    tasks.innerHTML += `<div id="list-${task}"><li>${task}<button>X</button></div>`;
-  })
+    let todo = task.value;
+    list.innerHTML += `<div id="list-${todo}"><li>${todo}<button>X</button></div>`;
+  });
 });
